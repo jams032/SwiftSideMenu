@@ -40,31 +40,7 @@ import UIKit
         
         let apiData = MenuListModel()
         
-        if let AuthData = dic["AuthData"]{
-            if !((AuthData.isEqual(NSNull()))) {
-                if let allAuthData = dic["AuthData"] as? AnyObject {
-                    apiData.AuthData = getAuthdata(From: (allAuthData  as? AnyObject)!)
-                }
-            }
-        }
         
-        apiData.Authenticated = dic["Authenticated"] as? NSNumber
-        
-        if let publicData = dic["Public"]{
-            if !((publicData.isEqual(NSNull()))) {
-                if let allPublicData = dic["Public"] as? [AnyObject]?{
-                    apiData.Public = getPublicPrivateData(From: allPublicData  as? [AnyObject])
-                }
-            }
-        }
-        
-        if let privateData = dic["Private"]{
-            if !((privateData.isEqual(NSNull()))) {
-                if let allPrivateData = dic["Private"] as? [AnyObject]?{
-                    apiData.Private = getPublicPrivateData(From: allPrivateData  as? [AnyObject])
-                }
-            }
-        }
         print(apiData.description)
         return apiData
     }
@@ -73,20 +49,7 @@ import UIKit
     class func getPublicPrivateData(From dic:[AnyObject]!)->[MenuModel]{
 
         var allMenus = [MenuModel]()
-        for item in dic{
-            
-            let tempdic = item as! [String:AnyObject]
-            let mMenu = MenuModel()
-            objectOfDictionary(dictionary: tempdic, cClass: MenuModel.self, object: mMenu)
-
-            if let dob = item["Children"] as? [AnyObject]{
-                if dob != nil {
-                    mMenu.Children = getPublicPrivateData(From: dob as? [AnyObject])
-                }
-            }
-            
-            allMenus.append(mMenu)
-        }
+        
         return allMenus
     }
     

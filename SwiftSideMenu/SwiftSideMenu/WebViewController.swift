@@ -11,7 +11,7 @@ import WebKit
 import QuartzCore
 
 @available(iOS 11.0, *)
-class WebViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UIGestureRecognizerDelegate {
+class WebViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UIGestureRecognizerDelegate { //MenuListViewModelDelegate
 
     @IBOutlet var leftTableView: UITableView!
     @IBOutlet var rightTableView: UITableView!
@@ -46,6 +46,9 @@ class WebViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     var maxWidth : CGFloat = -5.0
     var isViewLoad = false
     
+   // let viewModel = MenuListViewModel() // if you want to call menu api in MVVM
+   // var allMenusData = MenuListModel()
+    
     // MARK: - Override methood
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +63,11 @@ class WebViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 
         isViewLoad = false
         self.callTableViewFakeLoader()
+        
+        
+        //Menu Data
+        //viewModel.delegate = self
+       // allMenusData = PSUserDefaults.getMenuData()
         
         // Set test left menu data
         let leftMenuModel = MenuModel.init(Label: "Test1", Url: "", Rank: 1, Children: [MenuModel()], isSubMenu: 0)

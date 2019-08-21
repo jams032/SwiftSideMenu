@@ -10,6 +10,7 @@ import UIKit
 
 class MenuModel: NSObject , NSCoding {
     
+    // change the param according to your API structure when menu items comes from API
     @objc var Label: String!
     @objc var Url: String!
     @objc var Children = [MenuModel]()

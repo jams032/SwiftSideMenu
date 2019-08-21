@@ -11,6 +11,7 @@ import UIKit
 
 class MenuListModel: NSObject , NSCoding {
     
+    // change the param according to your API structure when menu items comes from API
     @objc  var Authenticated: NSNumber! = nil
     @objc var AuthData = AuthDataModel()
     @objc var Private = [MenuModel]()
