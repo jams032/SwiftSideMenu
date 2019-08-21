@@ -1,6 +1,6 @@
 //
 //  DrawerTableViewCell.swift
-//  Burn2Learn
+//  SwiftSideMenu
 //
 //  Copyright © 2019 Jamshed ALam. All rights reserved.
 //
