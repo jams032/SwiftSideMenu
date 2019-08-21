@@ -101,15 +101,7 @@ class Utility {
         let version = dictionary["CFBundleShortVersionString"] as! String
         return "Version - \(version)"
     }
-    
-    class func addLinearProgressBar (parentView : UIView , subView : LinearProgressBar ){
 
-        subView.backgroundColor = Utility.hexStringToUIColor(hex: PROGRESS_MOVE_BG, alpha: 1)
-        subView.progressBarColor = Utility.hexStringToUIColor(hex: PROGRESS_MOVE_COLOR, alpha: 1)
-        subView.heightForLinearBar = 2.50
-        parentView.addSubview(subView)
-        
-    }
     
 }
 

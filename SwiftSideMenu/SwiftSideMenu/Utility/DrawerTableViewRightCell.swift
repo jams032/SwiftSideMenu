@@ -2,7 +2,7 @@
 //  DrawerTableViewCell.swift
 //  Burn2Learn
 //
-//  Copyright © 2017 FAQ. All rights reserved.
+//  Copyright © 2019 Jamshed ALam. All rights reserved.
 //
 
 import UIKit

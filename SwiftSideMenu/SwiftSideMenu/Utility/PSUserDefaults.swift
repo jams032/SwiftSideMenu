@@ -177,9 +177,7 @@ class PSUserDefaults : NSObject {
         if urlString.contains("sharethis") || urlString.contains("doubleclick.net") || urlString.contains("driftt.com")  {
             return true
         }
-        else if urlString.contains("facebook") && !urlString.contains(FB_AUTH_URL2) {
-            return true
-        }
+       
         return false
     }
 }

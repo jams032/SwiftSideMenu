@@ -39,7 +39,7 @@ class ServiceModel: NSObject, WebServiceDelegate {
         switch service {
             
         case .MENU_LIST:
-            urlString = DOMAIN_URL + MENU_LIST
+        urlString = DOMAIN_URL  //+ MENU_LIST
             
         default: break
             
