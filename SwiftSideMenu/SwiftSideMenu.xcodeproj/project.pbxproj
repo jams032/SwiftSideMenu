@@ -34,7 +34,6 @@
 		3AF361BC22191EDD0049FA29 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF361BB22191EDD0049FA29 /* libz.tbd */; };
 		3AF361BE22191EEE0049FA29 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF361BD22191EEE0049FA29 /* libc++.1.tbd */; };
 		887788AB222EDFD700BA9A5E /* LinearProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887788AA222EDFD600BA9A5E /* LinearProgressBar.swift */; };
-		B759A77122103386009E6D30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B759A77022103386009E6D30 /* GoogleService-Info.plist */; };
 		B7EAF8652210184C00AC84D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF8642210184C00AC84D4 /* AppDelegate.swift */; };
 		B7EAF8672210184C00AC84D4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF8662210184C00AC84D4 /* WebViewController.swift */; };
 		B7EAF86C2210185800AC84D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7EAF86B2210185800AC84D4 /* Assets.xcassets */; };
@@ -90,7 +89,6 @@
 		3AF361BB22191EDD0049FA29 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3AF361BD22191EEE0049FA29 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		887788AA222EDFD600BA9A5E /* LinearProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgressBar.swift; sourceTree = "<group>"; };
-		B759A77022103386009E6D30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7C4E91F2212D2BD00450C8C /* SwiftSideMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftSideMenu.entitlements; sourceTree = "<group>"; };
 		B7EAF8612210184C00AC84D4 /* SwiftSideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EAF8642210184C00AC84D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				3AE5FF47222E3C06002E266C /* Dosis-Book.ttf */,
 				3AE5FF45222E3AFE002E266C /* Dosis-Light.ttf */,
 				3AE5FF49222E600A002E266C /* Dosis-SemiBold.ttf */,
-				B759A77022103386009E6D30 /* GoogleService-Info.plist */,
 				3AD800C822198430005AE324 /* 60.png */,
 				3A70511B221A751E00999D6D /* logo.png */,
 				3A578690221C3A8700C01417 /* LeftMenu.png */,
@@ -170,7 +167,7 @@
 			children = (
 				B7F29E7422155B6000631050 /* Model */,
 				B7EAF8632210184C00AC84D4 /* SwiftSideMenu */,
-				B7EAF8782210185800AC84D4 /* PartiStaffUITests */,
+				B7EAF8782210185800AC84D4 /* SwiftSideMenuUITests */,
 				B7EAF8622210184C00AC84D4 /* Products */,
 				5D1A0A22851B429D6A314294 /* Frameworks */,
 			);
@@ -204,13 +201,13 @@
 			path = SwiftSideMenu;
 			sourceTree = "<group>";
 		};
-		B7EAF8782210185800AC84D4 /* PartiStaffUITests */ = {
+		B7EAF8782210185800AC84D4 /* SwiftSideMenuUITests */ = {
 			isa = PBXGroup;
 			children = (
 				B7EAF8792210185800AC84D4 /* PartiStaffUITests.swift */,
 				B7EAF87B2210185800AC84D4 /* Info.plist */,
 			);
-			path = PartiStaffUITests;
+			path = SwiftSideMenuUITests;
 			sourceTree = "<group>";
 		};
 		B7EAF886221019D700AC84D4 /* Utility */ = {
@@ -368,7 +365,6 @@
 				3AD800C922198430005AE324 /* 60.png in Resources */,
 				3A578693221C3A8700C01417 /* LeftMenu.png in Resources */,
 				3A3907B42222360400C525FB /* Main.storyboard in Resources */,
-				B759A77122103386009E6D30 /* GoogleService-Info.plist in Resources */,
 				3AAB43C3222F674900D8DFD9 /* Profile_pic-2.png in Resources */,
 				3AD61A50221D2F1E0018E37D /* right-menu-icon-iOS.png in Resources */,
 				B7EAF86C2210185800AC84D4 /* Assets.xcassets in Resources */,
@@ -614,13 +610,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: App Developer (ZMM788K49N)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PartiStaffUITests/Info.plist;
+				INFOPLIST_FILE = SwiftSideMenuUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.au.partistaff.PartiStaffUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.SwiftSideMenu.SwiftSideMenuUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -634,13 +630,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: PartiStaff Pty Ltd (MVSS3D4Y7Y)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PartiStaffUITests/Info.plist;
+				INFOPLIST_FILE = SwiftSideMenuUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.au.partistaff.PartiStaffUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.SwiftSideMenu.SwiftSideMenuUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
